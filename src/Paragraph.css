@@ -1,0 +1,15 @@
+/* 
+==================
+paragraph
+==================
+*/
+
+.paragraph {
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  color: var(--clr-paragraph);
+  max-width: 70ch;
+  margin-inline: auto;
+  margin-top: 1.5rem;
+}

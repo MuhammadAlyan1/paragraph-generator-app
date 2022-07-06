@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Paragraphs } from "./Paragraphs";
+
+// css
+import "./App.css";
 
 function App() {
+  const [length, setLength] = useState(1);
+  const [paragraphsLength, setParagraphsLength] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 className="main-heading">Random Paragraph Generator</h1>
+      <section className="input-section">
+        <label htmlFor="paragraphLength">Paragraphs</label>
+        <input
+          type="number"
+          id="paragraphLength"
+          value={length}
+          onChange={(e) => setLength(e.target.value)}
+        />
+        <button onClick={() => setParagraphsLength(length)}>generate</button>
+      </section>
+
+      <Paragraphs length={paragraphsLength} />
     </div>
   );
 }
