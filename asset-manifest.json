@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/paragraph-generator-app/static/css/main.58c29894.css",
+    "main.js": "/paragraph-generator-app/static/js/main.b654bba3.js",
+    "index.html": "/paragraph-generator-app/index.html",
+    "main.58c29894.css.map": "/paragraph-generator-app/static/css/main.58c29894.css.map",
+    "main.b654bba3.js.map": "/paragraph-generator-app/static/js/main.b654bba3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58c29894.css",
+    "static/js/main.b654bba3.js"
+  ]
+}
